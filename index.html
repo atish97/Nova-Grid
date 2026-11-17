@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA GRID — Power Your Home, Intelligently</title>
+  <meta name="description" content="Monitor your energy, maximize solar, store what you produce, and control every watt from one beautifully simple system." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <div class="nav-pill-backdrop" aria-hidden="true"></div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#products" class="nav-link">Product</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#how-it-works" class="nav-link">How it works</a>
+        <a href="#resources" class="nav-link">Resources</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-primary open-modal-btn">
+          <span>Get Started</span>
+          <img src="assets/images/arrow-icon.svg" alt="" class="btn-arrow" width="24" height="24" />
+        </button>
+
+        <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" aria-hidden="true">
+      <a href="#products" class="mobile-nav-link">Product</a>
+      <a href="#solutions" class="mobile-nav-link">Solutions</a>
+      <a href="#how-it-works" class="mobile-nav-link">How it works</a>
+      <a href="#resources" class="mobile-nav-link">Resources</a>
+      <button type="button" class="btn-primary mobile-cta open-modal-btn">
+        <span>Get Started</span>
+        <img src="assets/images/arrow-icon.svg" alt="" class="btn-arrow" width="24" height="24" />
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-media">
+        <img src="assets/images/hero-bg.png" alt="Modern solar-powered smart home" class="hero-bg-img" />
+        <div class="hero-gradient-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-container">
+        <!-- Floating Glassmorphic Battery Widget -->
+        <div class="battery-widget hero-animate" data-delay="100">
+          <div class="battery-label">Battery</div>
+          <div class="battery-value"><span id="battery-counter">0</span>%</div>
+          <div class="battery-track" role="progressbar" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100" aria-label="Home battery charge">
+            <div class="battery-fill" id="battery-fill"></div>
+          </div>
+        </div>
+
+        <!-- Bottom Hero Content -->
+        <div class="hero-bottom">
+          <div class="hero-copy">
+            <h1 class="hero-title hero-animate" data-delay="200">
+              Power your home,<br />intelligently.
+            </h1>
+            <p class="hero-subtitle hero-animate" data-delay="320">
+              Monitor your energy, maximize solar, store what you produce, and control every watt from one beautifully simple system.
+            </p>
+          </div>
+
+          <div class="hero-social-proof hero-animate" data-delay="420">
+            <div class="avatar-stack" id="flag-stack">
+              <div class="avatar-slot">
+                <img src="assets/images/avatar-1-67a176.png" alt="Partner country flag" class="avatar-item is-current" width="48" height="48" />
+                <img src="assets/images/avatar-1-67a176.png" alt="" class="avatar-item is-next" width="48" height="48" aria-hidden="true" />
+              </div>
+              <div class="avatar-slot">
+                <img src="assets/images/avatar-2-118c44.png" alt="Partner country flag" class="avatar-item is-current" width="48" height="48" />
+                <img src="assets/images/avatar-2-118c44.png" alt="" class="avatar-item is-next" width="48" height="48" aria-hidden="true" />
+              </div>
+              <div class="avatar-slot">
+                <img src="assets/images/avatar-3.png" alt="Partner country flag" class="avatar-item is-current" width="48" height="48" />
+                <img src="assets/images/avatar-3.png" alt="" class="avatar-item is-next" width="48" height="48" aria-hidden="true" />
+              </div>
+              <div class="avatar-slot">
+                <img src="assets/images/avatar-4.png" alt="Partner country flag" class="avatar-item is-current" width="48" height="48" />
+                <img src="assets/images/avatar-4.png" alt="" class="avatar-item is-next" width="48" height="48" aria-hidden="true" />
+              </div>
+            </div>
+            <p class="social-proof-text">
+              Trusted by 67+ energy-conscious country
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecosystem Partners Strip -->
+    <section class="ecosystem-strip reveal" id="how-it-works" aria-label="Supported energy ecosystem">
+      <div class="container ecosystem-inner">
+        <p class="ecosystem-label">Work with your ecosystem</p>
+        <div class="ecosystem-logos-wrap">
+          <div class="ecosystem-marquee-track">
+            <img src="assets/images/ecosystem-logos.png" alt="Compatible energy ecosystem partners" class="ecosystem-logos-img" />
+            <img src="assets/images/ecosystem-logos.png" alt="" class="ecosystem-logos-img" aria-hidden="true" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <header class="section-header reveal">
+          <h2 class="section-title">Built for the energy in your home.</h2>
+          <p class="section-subtitle">
+            From solar generation to EV charging, every NOVA GRID product works together seamlessly.
+          </p>
+        </header>
+
+        <div class="products-grid">
+          <article class="product-card reveal" data-stagger="0">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-solar.png" alt="Smart Solar Panels" class="product-img" loading="lazy" />
+            </div>
+            <h3 class="product-name">Smart Solar Panels</h3>
+            <p class="product-desc">Turn sunlight into clean, reliable energy for your home.</p>
+          </article>
+
+          <article class="product-card reveal" data-stagger="1">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-battery.png" alt="NOVA Battery" class="product-img" loading="lazy" />
+            </div>
+            <h3 class="product-name">NOVA Battery</h3>
+            <p class="product-desc">Store excess solar and keep your home powered when you need it.</p>
+          </article>
+
+          <article class="product-card reveal" data-stagger="2">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-charge.png" alt="NOVA Charge" class="product-img" loading="lazy" />
+            </div>
+            <h3 class="product-name">NOVA Charge</h3>
+            <p class="product-desc">Charge smarter with energy that's cleaner and more affordable.</p>
+          </article>
+
+          <article class="product-card reveal" data-stagger="3">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-hub.png" alt="NOVA Hub" class="product-img" loading="lazy" />
+            </div>
+            <h3 class="product-name">NOVA Hub</h3>
+            <p class="product-desc">Connect every energy system and see how your home works together.</p>
+          </article>
+
+          <article class="product-card reveal" data-stagger="4">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-thermo.png" alt="NOVA Thermo" class="product-img" loading="lazy" />
+            </div>
+            <h3 class="product-name">NOVA Thermo</h3>
+            <p class="product-desc">Keep your home comfortable while using energy more efficiently.</p>
+          </article>
+
+          <article class="product-card reveal" data-stagger="5">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-flow.png" alt="NOVA Flow" class="product-img" loading="lazy" />
+            </div>
+            <h3 class="product-name">NOVA Flow</h3>
+            <p class="product-desc">Understand where every watt goes, in real time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition Band -->
+    <section class="pillars-section" id="solutions" aria-label="Core platform pillars">
+      <div class="container pillars-grid">
+        <div class="pillar-card pillar-card--left reveal" data-stagger="0">
+          <img src="assets/images/icon-control.svg" alt="" class="pillar-icon" width="50" height="50" />
+          <h3 class="pillar-title">SMART ENERGY CONTROL</h3>
+        </div>
+
+        <div class="pillar-card pillar-card--center reveal" data-stagger="1">
+          <img src="assets/images/icon-efficiency.svg" alt="" class="pillar-icon" width="59" height="50" />
+          <h3 class="pillar-title">BUILT FOR EFFICIENCY</h3>
+        </div>
+
+        <div class="pillar-card pillar-card--right reveal" data-stagger="2">
+          <img src="assets/images/icon-connected.svg" alt="" class="pillar-icon pillar-icon--tall" width="62" height="65" />
+          <h3 class="pillar-title">CONNECTED BY DESIGN</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Split Section -->
+    <section class="faq-section" id="resources">
+      <div class="faq-media">
+        <img src="assets/images/faq-image.png" alt="NOVA GRID smart home installation" class="faq-bg-img" loading="lazy" />
+        <div class="faq-media-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="faq-content">
+        <h2 class="faq-heading reveal">
+          Got questions?<br />We’ve got answers.
+        </h2>
+
+        <div class="faq-list">
+          <div class="faq-item reveal" data-stagger="0">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-num">01</span>
+              <span class="faq-question">What products are included in the NOVA GRID system?</span>
+              <img src="assets/images/faq-icon.svg" alt="" class="faq-chevron" width="20" height="20" />
+            </button>
+            <div class="faq-panel" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>The NOVA GRID ecosystem includes Smart Solar Panels, NOVA Battery storage, NOVA Charge EV charger, NOVA Hub central controller, NOVA Thermo smart climate, and NOVA Flow real-time energy monitoring.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" data-stagger="1">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-num">02</span>
+              <span class="faq-question">Can NOVA GRID work with my existing solar system?</span>
+              <img src="assets/images/faq-icon.svg" alt="" class="faq-chevron" width="20" height="20" />
+            </button>
+            <div class="faq-panel" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Yes. NOVA Hub and NOVA Flow integrate seamlessly with most existing residential solar inverters, letting you add battery storage, EV charging, and real-time analytics without replacing your panels.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" data-stagger="2">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-num">03</span>
+              <span class="faq-question">How does NOVA GRID help reduce energy costs?</span>
+              <img src="assets/images/faq-icon.svg" alt="" class="faq-chevron" width="20" height="20" />
+            </button>
+            <div class="faq-panel" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>NOVA GRID automatically prioritizes stored solar during peak utility rate hours, schedules EV charging when electricity is cleanest and cheapest, and optimizes HVAC usage with NOVA Thermo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" data-stagger="3">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-num">04</span>
+              <span class="faq-question">Can I monitor my home’s energy usage in real time?</span>
+              <img src="assets/images/faq-icon.svg" alt="" class="faq-chevron" width="20" height="20" />
+            </button>
+            <div class="faq-panel" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Yes. NOVA Flow gives you live, circuit-level visibility into solar generation, battery charge, EV draw, and appliance consumption from one unified dashboard.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item reveal" data-stagger="4">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-num">05</span>
+              <span class="faq-question">Does NOVA GRID support EV charging?</span>
+              <img src="assets/images/faq-icon.svg" alt="" class="faq-chevron" width="20" height="20" />
+            </button>
+            <div class="faq-panel" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Absolutely. NOVA Charge pairs directly with your solar production and battery state so your vehicle charges on surplus clean energy or off-peak grid rates automatically.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item faq-item--last reveal" data-stagger="5">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span class="faq-num">06</span>
+              <span class="faq-question">Can I control my home’s climate through NOVA GRID?</span>
+              <img src="assets/images/faq-icon.svg" alt="" class="faq-chevron" width="20" height="20" />
+            </button>
+            <div class="faq-panel" aria-hidden="true">
+              <div class="faq-panel-inner">
+                <p>Yes. NOVA Thermo learns your comfort preferences and coordinates heating and cooling with your solar and battery availability to keep your home comfortable while cutting waste.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Get Started Modal -->
+  <div class="modal-backdrop" id="get-started-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close" aria-label="Close modal">&times;</button>
+      <h2 class="modal-title" id="modal-title">Start with NOVA GRID</h2>
+      <p class="modal-subtitle">Tell us about your home and we’ll design a tailored solar, storage, and smart control setup.</p>
+      <form class="modal-form" id="lead-form">
+        <label class="form-field">
+          <span>Full Name</span>
+          <input type="text" name="name" placeholder="Alex Morgan" required />
+        </label>
+        <label class="form-field">
+          <span>Email Address</span>
+          <input type="email" name="email" placeholder="alex@example.com" required />
+        </label>
+        <label class="form-field">
+          <span>Primary Interest</span>
+          <select name="interest">
+            <option value="full-system">Complete NOVA GRID Ecosystem</option>
+            <option value="solar-battery">Smart Solar + NOVA Battery</option>
+            <option value="ev-charge">NOVA Charge (EV Charging)</option>
+            <option value="monitoring">NOVA Hub + NOVA Flow</option>
+          </select>
+        </label>
+        <button type="submit" class="btn-primary modal-submit">
+          <span>Request Your Plan</span>
+          <img src="assets/images/arrow-icon.svg" alt="" class="btn-arrow" width="24" height="24" />
+        </button>
+      </form>
+      <div class="modal-success" id="modal-success" hidden>
+        <p class="success-badge">Request Received</p>
+        <h3>You're on the grid.</h3>
+        <p>A NOVA GRID energy specialist will reach out shortly with your custom home assessment.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
